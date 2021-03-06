@@ -86,52 +86,15 @@ p {
 .contain .white .links a {
   color: #fff;
 }
-@media only screen and (max-width: 1060px) {
+
+@media only screen and (max-width: 980px) {
   .contain nav {
     max-width: 620px;
     height: auto;
     flex-wrap: nowrap;
   }
 }
-
-/*footer {
-  //width: 100%;
-  max-width: 1280px;
-  min-width: 650px;
-  min-height: 100px;
-  margin: 0 auto;
-  background-color: $site-blue;
-  color: $white;
-  justify-content: center;
-
-  .thirds {
-    max-width: 980px;
-    min-width: 650px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding-top: 25px;
-
-    .logo {
-      width: 30%;
-      text-align: left;
-    }
-
-    p {
-      width: 40%;
-      font-family: Gill Sans Regular;
-      font-size: 12px;
-    }
-
-    .icons {
-      width: 30%;
-      text-align: right;
-    }
-  }
-}*/
+/* styling for the footer at the bottom of the page */
 footer {
   max-width: 1280px;
   min-width: 650px;
@@ -193,7 +156,7 @@ footer .icons {
   font-family: Gill Sans Regular;
 }
 
-/* styling for the promo tours cards */
+/* styling for the promo tours cards on the home page */
 .promo-tours {
   max-width: 1280px;
   height: 304px;
@@ -270,6 +233,7 @@ footer .icons {
     margin-bottom: 30px;
   }
 }
+/* styling for the booking form on the home page */
 .booking-form {
   max-width: 825px;
   min-height: 1050px;
@@ -333,7 +297,7 @@ footer .icons {
   color: #fff;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1060px) {
   .booking-form {
     min-width: 650px;
     padding-left: 40px;
@@ -360,6 +324,7 @@ footer .icons {
     width: 100%;
   }
 }
+/* styling for the about page */
 .about {
   max-width: 980px;
   margin: 0 auto;
@@ -436,18 +401,21 @@ footer .icons {
   color: #79addc;
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 980px) {
   .about {
-    width: 100%;
-    margin-left: 20px;
-    min-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
   }
-  .about .client {
-    margin: auto;
+  .about .about-top-section .para1 {
+    min-width: 600px;
   }
-  .about .client .client-image {
+  .about .about-bottom-section .client .client-image {
     min-width: 250px;
+  }
+  .about .about-bottom-section .client .client-quote {
+    min-width: 360px;
   }
 }
